@@ -33,6 +33,17 @@ class EmojiTableViewController: UITableViewController {
         //        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
     
+    @IBAction func unwindSegue (segue: UIStoryboardSegue) {
+        guard segue.identifier == "saveSegue" else {return}
+        let sourceVC = segue.source as! NewEmojiTableViewController
+        let newIndexPath = IndexPath(row: objects.count, section: 0)
+        
+        objects.append(sourceVC.emoji)
+        
+        tableView.insertRows(at: [newIndexPath], with: .fade)
+        
+    }
+    
     // MARK: - Table view data source
     
     //регистрация кол-ва секций
@@ -100,7 +111,7 @@ class EmojiTableViewController: UITableViewController {
         return UISwipeActionsConfiguration(actions: [like])
     }
     
-    //создание кнопки экена и действия с данными
+    //создание кнопки экшена и действия с данными
     func likeAction (at indexPath: IndexPath) -> UIContextualAction {
         let action = UIContextualAction(style: .normal, title: "Like") { action, view, completion in
             

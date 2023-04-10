@@ -69,12 +69,12 @@
 				091A64B229C8AF0900A7452F /* SceneDelegate.swift */,
 				091A64B429C8AF0900A7452F /* ViewController.swift */,
 				093A0E4B29E2A9CF00D95A00 /* EmojiTableViewController.swift */,
+				093A0E5129E31C6400D95A00 /* NewEmojiTableViewController.swift */,
 				093A0E4F29E2D27000D95A00 /* EmojiModel.swift */,
 				091A64B629C8AF0900A7452F /* Main.storyboard */,
 				091A64B929C8AF0A00A7452F /* Assets.xcassets */,
 				091A64BB29C8AF0A00A7452F /* LaunchScreen.storyboard */,
 				091A64BE29C8AF0A00A7452F /* Info.plist */,
-				093A0E5129E31C6400D95A00 /* NewEmojiTableViewController.swift */,
 			);
 			path = uikitLessons;
 			sourceTree = "<group>";
